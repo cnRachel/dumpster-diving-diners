@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 :root{
-   --main-color:#fecf7e;
+   --main-color:#feed67;
    --black:#000;
    --white:#fff;
    --border:.2rem solid var(--black);
    --box-shadow:0 1rem 1.5rem rgba(0,0,0,.3);
+   --border-bold:.5rem solid var(--black);
+   --border-light:.2rem solid var(--black);
 }
 
 *{
@@ -203,18 +205,19 @@ section{
 }
 
 .container{
-   max-width: 1200px;
+   width: 100%;
    margin: 0 auto;
    text-align: center;
    padding:25px 20px;
    margin-bottom: 20px;
+   background: var(--black);
    
  }
  
  .container .heading{
    font-size: 40px;
    margin-bottom: 20px;
-   color:#334;
+   color: var(--white);
  }
  
  .container .box-container{
@@ -253,6 +256,7 @@ section{
  
  .container .box-container .box:hover .image img{
    transform: scale(1.1);
+   transition: all .2s ease-in-out;
  }
  
  .container .box-container .box .content h3{
@@ -335,6 +339,58 @@ section{
    color:#fff;
  }
 
+
+
+iframe {
+   margin: auto;
+}
+
+.contact{
+   background: linear-gradient(var(--black) 50%, var(--yellow) 50.1%);
+}
+
+.contact h3{
+   text-align: center;
+   font-size: 4vw;
+   text-transform: uppercase;
+}
+
+.contact form{
+   max-width: 70rem;
+   margin:0 auto;
+   background-color: var(--white);
+   border:var(--border);
+   padding:2rem;
+}
+
+.contact form .box{
+   width: 100%;
+   margin:.7rem 0;
+   padding:1.2rem 1.4rem;
+   text-transform: none;
+   font-size: 2rem;
+   border:var(--border);
+}
+
+.contact form .box:focus{
+   background-color: var(--black);
+   color:var(--white);
+}
+
+.contact form .box::placeholder{
+   color:var(--black);
+   text-transform: capitalize;
+}
+
+.contact form .box:focus::placeholder{
+   color:var(--white);
+}
+ 
+.contact form textarea{
+   height: 20rem;
+   resize: none;
+}
+
 .footer{
    background:var(--black);
 }
@@ -349,10 +405,6 @@ section{
 
 .footer .credit span{
   color:var(--main-color);
-}
-
-iframe {
-   margin: auto;
 }
 
 
